@@ -26,26 +26,25 @@ Or install it yourself as:
 
 2. Create a new Object and pass the api key in there like
 
-convert = OpenexchangeConvert::ConvertCurrency(api_key)
+    convert = OpenexchangeConvert::ConvertCurrency(api_key)
 
 3. call one of the following methods on that object
 
 For example
 
-convert = OpenexchangeConvert::ConvertCurrency(api_key)
-convert.convert_to_foreign('EUR', 100)
+    convert = OpenexchangeConvert::ConvertCurrency(api_key)
+    convert.convert_to_foreign('EUR', 100)
            or
-convert.convert_to_foreign('EUR', '100') # either will return
+    convert.convert_to_foreign('EUR', '100') # either will return
 
 
 methods:
 
-get_all_exchange_rates
-get_exchange_rate(currencytype)      # string
-convert_to_usd(currency, amount)     # string, amount can be string or
-                                     # integer
-convert_to_foreign(currency, amount) # string, amount can be string or
-                                     # integer
+    get_all_exchange_rates
+    get_exchange_rate(currencytype)      # string
+    convert_to_usd(currency, amount)     # string, amount can be string or integer
+    convert_to_foreign(currency, amount) # string, amount can be string or integer
+                                    
 ## TODO ##
 1. Exception Handling
 2. More Functionality
