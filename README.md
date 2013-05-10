@@ -26,19 +26,22 @@ Or install it yourself as:
 
 2. Create a new Object and pass the api key in there like
 
-    convert = OpenexchangeConvert::ConvertCurrency(api_key)
-
-3. call one of the following methods on that object
-
-For example
+Example
 
     convert = OpenexchangeConvert::ConvertCurrency(api_key)
-    convert.convert_to_foreign('EUR', 100)
+
+
+3. Call one of the following methods on that object
+
+Example
+
+    convert = OpenexchangeConvert::ConvertCurrency(api_key)
+    convert.convert_to_foreign('EUR', 100) # integer
            or
-    convert.convert_to_foreign('EUR', '100') # either will return
+    convert.convert_to_foreign('EUR', '100') #  string either will return
 
 
-methods:
+Methods:
 
     get_all_exchange_rates
     get_exchange_rate(currencytype)      # string
